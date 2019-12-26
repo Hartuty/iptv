@@ -21,7 +21,7 @@ Route::get('/logout','LoginController@logout');
 
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
-    return view('login');   
+    return view('login');
 })->name('clear');
 
 Route::get('/dashboard', function () {
@@ -43,7 +43,3 @@ Route::get('/movie', function () {
 Route::get('/tv', function () {
     return view('tv');
 })->name('tv');
-
-Route::get('/upload', function () {
-    return view('upload');
-})->name('upload');
