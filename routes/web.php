@@ -21,7 +21,7 @@ Route::get('/logout','LoginController@logout');
 
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
-    return view('login');
+    return view('login');   
 })->name('clear');
 
 Route::get('/dashboard', function () {
